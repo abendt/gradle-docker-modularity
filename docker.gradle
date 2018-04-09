@@ -1,0 +1,17 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath("com.bmuschko:gradle-docker-plugin:3.2.6")
+    }
+}
+
+apply plugin: com.bmuschko.gradle.docker.DockerRemoteApiPlugin
+
+import com.bmuschko.gradle.docker.tasks.*
+import com.bmuschko.gradle.docker.tasks.container.*
+
+task dockerInfo(type: DockerInfo)
+
+task dockerVersion(type: DockerVersion)

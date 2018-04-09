@@ -1,0 +1,3 @@
+apply {
+    from("../docker.gradle")
+}
