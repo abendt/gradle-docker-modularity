@@ -1,3 +1,0 @@
-apply {
-    from("../docker.gradle")
-}

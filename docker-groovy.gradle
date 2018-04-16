@@ -15,3 +15,4 @@ import com.bmuschko.gradle.docker.tasks.container.*
 task dockerInfo(type: DockerInfo)
 
 task dockerVersion(type: DockerVersion)
+cd

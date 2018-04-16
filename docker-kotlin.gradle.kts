@@ -5,12 +5,16 @@ buildscript {
     repositories {
         jcenter()
     }
+
     dependencies {
-        classpath("com.bmuschko:gradle-docker-plugin:3.2.6")
+        classpath("com.bmuschko:gradle-docker-plugin:3.2.0")
     }
 }
 
-apply<com.bmuschko.gradle.docker.DockerRemoteApiPlugin>()
+
+apply {
+    plugin("com.bmuschko.docker-remote-api")
+}
 
 createTask("dockerInfo", DockerInfo::class) {
 }
